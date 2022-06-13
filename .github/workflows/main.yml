@@ -56,7 +56,7 @@ build_and_push_to_docker_hub:
           push: true
           tags: ase77/infra_actions:latest
 
-  deploy:
+deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
